@@ -1,32 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" media="screen" type="text/css" href="newOne.css">
     <title>Document</title>
+    <script src="example.js"></script>
+    <script>
+        // let emp1 = {id:101,name:'Kavana',course:'MBA'}
+        function ClickOn(){
+            // const variable = document.getElementById('pTag1').innerHTML;
+            // console.log(variable);
+            var name = document.getElementById('pTag3').innerHTML;
+            document.getElementById('pTag3').innerHTML = 'Hello Morning!';
+            document.getElementById('pTag4').innerHTML = 'Smart Developers!';
+            const pi=3.14;
+            console.log(pi)
+            // pi=4556;
+            // console.log(pi)
+            var name='keerthi';
+            console.log(name);
+            var name='KEERTHI S R';
+            console.log(name);
+            let course='MCA';
+            console.log(course);
+            course='MBA';
+            console.log(course);
+        }
+    </script>
 </head>
-
 <body>
-    <div id="divOne">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque praesentium sed ad optio possimus dolor saepe,
-            incidunt deserunt quibusdam porro?</p>
-    </div>
-     <div id="divTwo">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur assumenda aspernatur reprehenderit
-            voluptate voluptates doloremque inventore unde tempore in consequuntur.</p>
-    </div> 
-    <div id="divThree">
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam porro repellendus tempore ipsam adipisci
-            deleniti nam ratione vel aliquam ducimus?
-        </p>
-    </div> 
-    <div id="divFour">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet omnis voluptatibus earum officiis a similique
-            minima inventore, illo eos alias?</p>
-    </div>
-
+    <button onclick="pressMe()">Press me</button>
+    <p id="pTag1">Hello good morning</p>
+    <p id="pTag2">Hello good morning everyone</p>
+    <button onclick="ClickOn()">Click Here</button>
+    <p id="pTag3">Morning</p>
+    <p id="pTag4"></p>
+    <button onclick="newClick()">Press Here</button>
+    <p class="pClass">Hey!!</p>
+    <p class="pClass">Hello</p>
+    <p class="pClass">Everyone</p>
+    <p name="newName">Say</p>
+    <p name="newName">please</p>
+    <p>Be kind</p>
+    <p>Be positive</p>
 </body>
-
 </html>
